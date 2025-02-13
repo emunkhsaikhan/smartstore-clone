@@ -56,3 +56,102 @@ export const PaymentChoices = [
     logo: "https://smartstore.mn/9160712cce601f26752081ceedaadbdd.svg",
   },
 ];
+
+let infoID: number = 1;
+type Information = {
+  id: number;
+  title: string;
+  info: string;
+};
+export const InformationArrays: Information[] = [
+  {
+    id: infoID++,
+    title: "Батерей",
+    info: "4001-5000 mah",
+  },
+  {
+    id: infoID++,
+    title: "Дэлгэцийн хэмжээ",
+    info: "67.8 inch",
+  },
+  {
+    id: infoID++,
+    title: "Камерын төрөл",
+    info: "Triple",
+  },
+  {
+    id: infoID++,
+    title: "Камера видео",
+    info: "1080p",
+  },
+  {
+    id: infoID++,
+    title: "Үйлдлийн систем",
+    info: "Android",
+  },
+  {
+    id: infoID++,
+    title: "Санах ой",
+    info: "12GB",
+  },
+  {
+    id: infoID++,
+    title: "Селфи камера төрөл",
+    info: "Single",
+  },
+  {
+    id: infoID++,
+    title: "Селфи видео",
+    info: "1080p",
+  },
+  {
+    id: infoID++,
+    title: "СИМ карт",
+    info: "Dual",
+  },
+  {
+    id: infoID++,
+    title: "Сим картын төрөл",
+    info: "Нано",
+  },
+  {
+    id: infoID++,
+    title: "Багтаамж",
+    info: "256GB",
+  },
+  {
+    id: infoID++,
+    title: "CPU",
+    info: "Octa-core (1x3.1 GHz Cortex-A78 & 3x3.0 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+  },
+  {
+    id: infoID++,
+    title: "GPU",
+    info: "Mali-G610 MC6",
+  },
+  {
+    id: infoID++,
+    title: "Чипсет",
+    info: "Mediatek Dimensity 8200 Ultimate (4 nm)",
+  },
+  {
+    id: infoID++,
+    title: "Дэлгэцийн нягтаршил",
+    info: "1080 x 2436 pixels (~388 ppi density)",
+  },
+  {
+    id: infoID++,
+    title: "Дэлгэцийн төрөл",
+    info: "AMOLED, 1B colors, 144Hz, 1300 nits (peak)",
+  },
+  {
+    id: infoID++,
+    title: "Төрөл",
+    info: "Ухаалаг гар утас",
+  },
+  {
+    id: infoID++,
+    title: "Дэлгэцийн даатгал",
+    info: "80%",
+  },
+];

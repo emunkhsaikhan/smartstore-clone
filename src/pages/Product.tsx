@@ -7,7 +7,7 @@ const Product = () => {
   const { productId } = useParams();
   const [width, setWidth] = useState(window.innerWidth);
   return (
-    <section>
+    <section className="w-full max-w-[1300px] mx-auto">
       {/* DESCRIPTION & HEADER */}
       <Header />
       <ProductCard />
