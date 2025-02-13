@@ -1,7 +1,10 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Thumbs } from "swiper/modules";
+// @ts-ignore
 import "swiper/css";
+// @ts-ignore
 import "swiper/css/pagination";
+// @ts-ignore
 import "swiper/css/thumbs";
 import { useEffect, useState } from "react";
 // COMPONENTS
@@ -245,10 +248,10 @@ const ProductCard: React.FC = () => {
                 </button>
               </div>
               <div className="flex w-full items-center gap-4">
-                <button className="h-12 py-3 w-full border border-[2px] font-semibold border-secondary_purple text-secondary_purple rounded-md hover:border-primary_blue hover:text-primary_blue transition duration-300 ease-in-out">
+                <button className="h-12 py-3 w-full border  font-semibold border-secondary_purple text-secondary_purple rounded-md hover:border-primary_blue hover:text-primary_blue transition duration-300 ease-in-out">
                   Сагсанд хийх
                 </button>
-                <button className="h-12 py-3 bg-secondary_purple border border-[2px] border-secondary_purple text-white w-full font-semibold rounded-md hover:bg-transparent hover:text-secondary_purple transition duration-300 ease-in-out">
+                <button className="h-12 py-3 bg-secondary_purple border  border-secondary_purple text-white w-full font-semibold rounded-md hover:bg-transparent hover:text-secondary_purple transition duration-300 ease-in-out">
                   Худалдан авах
                 </button>
               </div>
