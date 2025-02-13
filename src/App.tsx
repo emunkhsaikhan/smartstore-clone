@@ -7,12 +7,14 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <section>
+    <section className="min-h-screen flex flex-col">
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/product/:productId" element={<Product />} />
-      </Routes>
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:productId" element={<Product />} />
+        </Routes>
+      </main>
       <Footer />
     </section>
   );
