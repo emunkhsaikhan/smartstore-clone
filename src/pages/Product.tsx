@@ -1,13 +1,17 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
+import Header from "../components/Header";
+import ProductCard from "../components/ProductCard";
 
 const Product = () => {
   const { productId } = useParams();
-  console.log(productId);
+  const [width, setWidth] = useState(window.innerWidth);
   return (
-    <div>
-      <div>this is product page</div>
-      <p>{productId}</p>
-    </div>
+    <section>
+      {/* DESCRIPTION & HEADER */}
+      <Header />
+      <ProductCard />
+    </section>
   );
 };
 

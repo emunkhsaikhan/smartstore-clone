@@ -12,8 +12,55 @@
 }
 
 #root {
-  max-width: 1400px;
   margin: 0 auto;
   text-align: center;
   font-family: var(--font-roboto);
+}
+
+.navbar-button:hover {
+  background-color: var(--color-primary_blue);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  box-shadow: 0 0 0.5rem var(--color-primary_blue);
+}
+.navbar-button:hover .icon {
+  color: #fff;
+  text-shadow: 0 0 0.5rem var(--color-primary_blue),
+    0 0 1rem var(--color-primary_blue), 0 0 1.5rem var(--color-primary_blue);
+  filter: drop-shadow(0 0 10px var(--color-primary_blue));
+}
+.links::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-secondary_purple);
+  transition: 0.2s ease-in-out;
+}
+.links::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  width: 0;
+  height: 3px;
+  background-color: var(--color-secondary_purple);
+  transition: 0.2s ease-in-out;
+}
+.links:hover::before {
+  width: 50%;
+}
+.links:hover::after {
+  width: 50%;
+}
+.links {
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
