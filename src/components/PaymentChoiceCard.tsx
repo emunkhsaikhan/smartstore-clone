@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 // ICONS
 import { GoArrowLeft, GoArrowRight } from "react-icons/go";
-import { FcShipped } from "react-icons/fc";
 
 interface PaymentChoiceCardProps {
   img: string;
